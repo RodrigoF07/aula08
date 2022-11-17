@@ -1,0 +1,40 @@
+
+<!--
+    Para se trabalhar formulario no angular temos os seguintes amiguinhos:
+        -> Template Driven
+        -> Data Driven
+-->
+
+<!--TEMPLATE DRIVEN -->
+<!-- ngForm  -> Vai permitir criar uma variavel no html-->
+<!-- ngModel  -> Vai trabalhar em conjunto com o ngForm-->
+<!-- ngSubmit  -> Vai enviar as informações do formulario para o arquivo .ts-->
+
+<!-- 
+    OBS: Para usar o ngForm precisa fazer a importação do modulo FormsModule
+    no arquivo de modulo que é responsavel pelo component
+-->
+
+<div class="container" style="margin-top: 100px;">
+<h1 class="text-center"> Formulário de Cadastro</h1>
+
+
+
+
+<form #formulario="ngForm" (ngSubmit)="cadastrar(formulario)">
+
+    <div class="form-group">
+      <label>Endereço da imagem (URL):</label>
+      <input type="tex" class="form-control"  placeholder="http://imagem.com" name="img" ngModel>
+      </div>
+
+    <div class="form-group mt-3">
+      <label>Título da Foto</label>
+      <input type="text" class="form-control" placeholder="Título da Foto" name="titulo" ngModel>
+    </div>
+    
+    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+  </form>
+
+
+</div>

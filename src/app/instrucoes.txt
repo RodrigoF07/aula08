@@ -1,0 +1,9 @@
+    Criar uma Web API Fake (A simulação de um banco de dados online)
+Passo 01: Instalar o json-server: npm install -g json-server
+    OBS: O comando acima devera ser executado dentro da pasta do projeto
+Passo 02: Criar um arquivo com a extenção .json: ex: banco.json
+Passo 03: Executar o comando: json-serve --watch 
+
+Precisamos de uma ferramenta que faça a conexão entre nossa APP e a nossa Fake API
+Quem poderá nos ajudar? eu o httpclient
+Quem poderá nos ajudar 2? eu o modulo httpclientmodule
