@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicoService } from 'src/app/shared/servico/servico.service';
 
 @Component({
   selector: 'pho-photoform',
@@ -7,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotoformComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+private servico: ServicoService
+
+  ) { }
 
   ngOnInit(): void {
   }
 
 
-  //Metodo de cadastro
+  
 cadastrar(form: any){
+
+  
   console.log(form.value);
+  this.servico.postFoto(form);
+  
   }
 
 }

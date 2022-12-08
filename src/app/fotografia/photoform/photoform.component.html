@@ -22,18 +22,24 @@
 
 
 <form #formulario="ngForm" (ngSubmit)="cadastrar(formulario)">
+  
+  
 
     <div class="form-group">
-      <label>Endereço da imagem (URL):</label>
-      <input type="tex" class="form-control"  placeholder="http://imagem.com" name="img" ngModel>
+      <label>Nome do Produto:</label>
+      <input type="tex" class="form-control"  placeholder="Produto" name="img" ngModel>
       </div>
 
     <div class="form-group mt-3">
-      <label>Título da Foto</label>
-      <input type="text" class="form-control" placeholder="Título da Foto" name="titulo" ngModel>
+      <label>Tipo do Produto</label>
+      <input type="text" class="form-control" placeholder="Tipo do Produto" name="titulo" ngModel>
+      
     </div>
     
-    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+    <button type="submit"  class="btn btn-primary mt-3">Enviar</button> <button type="submit"  class="btn btn-danger mt-3">Cancelar</button>
+
+  
+    
   </form>
 
 
